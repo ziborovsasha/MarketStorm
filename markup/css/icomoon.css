@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?99ab4e');
+  src:  url('../fonts/icomoon.eot?99ab4e#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?99ab4e') format('truetype'),
+    url('../fonts/icomoon.woff?99ab4e') format('woff'),
+    url('../fonts/icomoon.svg?99ab4e#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ic-arrow_down:before {
+  content: "\e900";
+}
+.icon-ic-arrow_left:before {
+  content: "\e901";
+}
+.icon-ic-arrow_right:before {
+  content: "\e902";
+}
+.icon-ic-basket:before {
+  content: "\e903";
+}
+.icon-ic-clock:before {
+  content: "\e904";
+}
+.icon-ic-eye:before {
+  content: "\e905";
+}
+.icon-ic-gift:before {
+  content: "\e906";
+}
+.icon-ic-hamburger:before {
+  content: "\e907";
+}
+.icon-ic-people:before {
+  content: "\e908";
+}
+.icon-ic-phone:before {
+  content: "\e909";
+}
+.icon-ic-sale:before {
+  content: "\e90a";
+}
+.icon-ic-search:before {
+  content: "\e90b";
+}
+
