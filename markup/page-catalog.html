@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/icomoon.css">
 	<link media="all" rel="stylesheet" href="css/style.css">
 </head>
-<body id="main">
+<body id="page-catalog">
 <!-- Header -->
 	<header id="header">
 		<nav id="nav">
@@ -57,10 +57,10 @@
 		</div>
 		<div class="panel">
 			<div class="wrapper clr">
-				<ul class="panel-wrap">
+				<ul class="panel-wrap clr">
 					<li class="btn-catalog active">
 						<a href="#" class="btn"><span class="icon-ic-hamburger"></span>Каталог товаров<span class="icon-ic-arrow_down"></span></a>			
-						<ul class="panel-nav">
+						<ul class="panel-nav" style="display: none;">
 							<li><a href="#">Анестезия<span class="ic icon-ic-arrow_right"></span></a></li>
 							<li><a href="#">Хирургическая Стоматология<span class="ic icon-ic-arrow_right"></span></a></li>
 							<li><a href="#">Реставрация<span class="ic icon-ic-arrow_right"></span></a></li>
@@ -80,8 +80,8 @@
 							<li class="sale"><a href="#"><span class="icon-ic-sale"></span>Распродажа</a></li>
 						</ul>
 					</li>
-					<li><a href="#"></a></li>
-					<li><a href="#"></a></li>
+					<li><span class="breadcrumbs">Зуботехнические материалы<span class="icon-ic-arrow_down"></span></span></li>
+					<li><span class="breadcrumbs">Воск и восковые ретенции<span class="icon-ic-arrow_down"></span></span></li>
 				</ul>				
 				<a href="#" class="btn btn-basket"><span class="icon-ic-basket"></span>Корзина</a>				
 			</div>
@@ -90,34 +90,228 @@
 <!-- Header end -->
 <!-- Content -->
 	<main id="content">
-		<section class="slider-top">
-			<div class="wrapper">
-				<ul class="slider-company">
-					<li><a href="#"><span class="ic icon-ic-arrow_left"></span></a></li>
-					<li><a href="#"><img src="img/img-company1.png" alt=""></a></li>
-					<li><a href="#"><img src="img/img-company2.png" alt=""></a></li>
-					<li><a href="#"><img src="img/img-company3.png" alt=""></a></li>
-					<li><a href="#"><img src="img/img-company4.png" alt=""></a></li>
-					<li><a href="#"><img src="img/img-company5.png" alt=""></a></li>
-					<li><a href="#"><img src="img/img-company6.png" alt=""></a></li>
-					<li><a href="#"><span class="ic icon-ic-arrow_right"></span></a></li>
-				</ul>
-				<ul class="slider-main">
-					<li><a href="#"><img src="img/img-slider-main.jpg" alt=""></a></li>
-				</ul>
-			</div>
-		</section>
-		<section class="bestsellers">
-			<div class="wrapper">
-				<div class="title">
-					<h2>Хиты продаж</h2>
-					<div class="btn-group btn-bg_white">
-						<a href="#" class="btn-slider left"><span class="ic icon-ic-arrow_left"></span></a>
-						<a href="#" class="btn-slider right"><span class="ic icon-ic-arrow_right"></span></a>
+		<div class="wrapper clr">
+			<form class="title-form clr">
+				<h2>Воск моделировочный</h2>
+				<fieldset class="set">
+					<div class="holder">
+						<label>Сортировать по</label>
+						<select class="styler">			
+							<option>Популярности</option>
+							<option>Дате</option>
+							<option>Цене</option>
+						</select>
 					</div>
-				</div>
-				<div class="bestsellers-slider clr">
-					<div class="bestsellers-slider__wrap">
+					<div class="holder">
+						<a href="#" class="btn-left active"><i class="ic ic--view_block"></i></a>
+						<a href="#" class="btn-right"><i class="ic ic--view_list"></i></a>
+					</div>
+				</fieldset>
+			</form>						
+			<div class="sidebar clr">
+				<aside class="sidebar-box">
+					<h4>Категории</h4>					
+					<ul>
+						<li><a href="#">Керамика</a></li>
+						<li><a href="#">Аттачмены и аксессуары к ним</a></li>
+						<li><a href="#">Воска и восковые ретенции</a></li>
+						<li><a href="#">Гипсы</a></li>
+						<li><a href="#">Жидкости, лаки, масла</a></li>				
+					</ul>
+				</aside>
+				<aside class="sidebar-box">
+					<h4>Цена</h4>					
+					<div class="sort-price">
+						<label for="price-min">от</label>
+						<input type="text" id="price-min" name="price">
+						<label for="price-max">до</label>
+						<input type="text" id="price-max" name="price">
+						<label for="price-max">руб.</label>
+					</div>
+					<div class="trackbarprice">
+						<div class="trackbarprice-from" style="width: 50%"></div>
+					</div>
+				</aside>
+				<aside class="sidebar-box ">
+					<h4>производитель</h4>					
+					<ul class="col-x2 clr">
+						<li>
+							<input type="checkbox" id="check1" name="check">
+							<label for="check1">EUR-MED</label>
+						</li>
+						<li>
+							<input type="checkbox" id="check2" name="check">
+							<label for="check2">Dentsply</label>
+						</li>
+						<li>
+							<input type="checkbox" id="check3" name="check">
+							<label for="check3">Bredent</label>
+						</li>
+						<li>
+							<input type="checkbox" id="check4" name="check">
+							<label for="check4">Spofa dental</label>
+						</li>
+						<li>
+							<input type="checkbox" id="check5" name="check">
+							<label for="check5">Medin</label>
+						</li>
+						<li>
+							<input type="checkbox" id="check6" name="check">
+							<label for="check6">Colgate</label>
+						</li>
+						<li>
+							<input type="checkbox" id="check7" name="check">
+							<label for="check7">Planmeca OY</label>
+						</li>
+						<li>
+							<input type="checkbox" id="check8" name="check">
+							<label for="check8">3M ESPE</label>
+						</li>										
+					</ul>
+					<a href="#" class="more"><span>+</span> Еще 3</a>
+				</aside>
+				<aside class="sidebar-box">
+					<h4>Материал</h4>					
+					<ul>
+						<li>
+							<input type="checkbox" id="check9" name="check">
+							<label for="check9">Керамика</label>
+						</li>
+						<li>
+							<input type="checkbox" id="check10" name="check">
+							<label for="check10">Пластик</label>
+						</li>
+						<li>
+							<input type="checkbox" id="check11" name="check">
+							<label for="check11">Керамо-пластика</label>
+						</li>
+						<li>
+							<input type="checkbox" id="check12" name="check">
+							<label for="check12">Цинк</label>
+						</li>															
+					</ul>
+				</aside>
+			</div>
+			<div class="content">
+				<div class="content-wrap">				
+					<div class="bestsellers-slider__wrap clr">
+						<div class="bestsellers-slider__box">
+							<a href="#" class="bestsellers-slider__img">
+								<img src="img/img-bestsellers1.jpg" alt="">
+								<img src="img/img-view.png" class="view" alt="">
+							</a>
+							<div class="bestsellers-slider__text">
+								<strong><a href="#">Трикальций селикатный цемент (уп.15 капс. 0,7 г+15 капс. жидк.)</a></strong>
+								<p>Biodentine, Франция</p>
+								<span>4 500 руб.</span>
+							</div>	
+						</div>
+					</div>				
+					<div class="bestsellers-slider__wrap clr">
+						<div class="bestsellers-slider__box">
+							<a href="#" class="bestsellers-slider__img">
+								<img src="img/img-bestsellers2.jpg" alt="">
+								<img src="img/img-view.png" class="view" alt="">
+							</a>
+							<div class="bestsellers-slider__text">
+								<strong><a href="#">Гемостатик, шприц 30 мл.</a></strong>
+								<p>ViscoStat, Франция</p>
+								<span>12 100 руб.</span>
+							</div>	
+						</div>
+					</div>
+					<div class="bestsellers-slider__wrap clr">
+						<div class="bestsellers-slider__box">
+							<a href="#" class="bestsellers-slider__img">
+								<img src="img/img-bestsellers3.jpg" alt="">
+								<img src="img/img-view.png" class="view" alt="">
+							</a>
+							<div class="bestsellers-slider__text">
+								<strong><a href="#">Гемостатик, шприц 30 мл.</a></strong>
+								<p>UltraPak, Франция</p>
+								<span>9 600 руб.</span>
+							</div>	
+						</div>
+					</div>				
+					<div class="bestsellers-slider__wrap clr">
+						<div class="bestsellers-slider__box">
+							<a href="#" class="bestsellers-slider__img">
+								<img src="img/img-bestsellers3.jpg" alt="">
+								<img src="img/img-view.png" class="view" alt="">
+							</a>
+							<div class="bestsellers-slider__text">
+								<strong><a href="#">Трикальций селикатный цемент (уп.15 капс. 0,7 г+15 капс. жидк.)</a></strong>
+								<p>Biodentine, Франция</p>
+								<span>4 500 руб.</span>
+							</div>	
+						</div>
+					</div>				
+					<div class="bestsellers-slider__wrap clr">
+						<div class="bestsellers-slider__box">
+							<a href="#" class="bestsellers-slider__img">
+								<img src="img/img-bestsellers4.jpg" alt="">
+								<img src="img/img-view.png" class="view" alt="">
+							</a>
+							<div class="bestsellers-slider__text">
+								<strong><a href="#">Гемостатик, шприц 30 мл.</a></strong>
+								<p>ViscoStat, Франция</p>
+								<span>12 100 руб.</span>
+							</div>	
+						</div>
+					</div>				
+					<div class="bestsellers-slider__wrap clr">
+						<div class="bestsellers-slider__box">
+							<a href="#" class="bestsellers-slider__img">
+								<img src="img/img-bestsellers1.jpg" alt="">
+								<img src="img/img-view.png" class="view" alt="">
+							</a>
+							<div class="bestsellers-slider__text">
+								<strong><a href="#">Ретракционная нить набор</a></strong>
+								<p>UltraPak, Франция</p>
+								<span>9 600 руб.</span>
+							</div>	
+						</div>
+					</div>				
+					<div class="bestsellers-slider__wrap clr">
+						<div class="bestsellers-slider__box">
+							<a href="#" class="bestsellers-slider__img">
+								<img src="img/img-bestsellers1.jpg" alt="">
+								<img src="img/img-view.png" class="view" alt="">
+							</a>
+							<div class="bestsellers-slider__text">
+								<strong><a href="#">Гемостатик, шприц 30 мл.</a></strong>
+								<p>ViscoStat, Франция</p>
+								<span>8 600 руб.</span>
+							</div>	
+						</div>
+					</div>				
+					<div class="bestsellers-slider__wrap clr">
+						<div class="bestsellers-slider__box">
+							<a href="#" class="bestsellers-slider__img">
+								<img src="img/img-bestsellers1.jpg" alt="">
+								<img src="img/img-view.png" class="view" alt="">
+							</a>
+							<div class="bestsellers-slider__text">
+								<strong><a href="#">Гемостатик, шприц 30 мл.</a></strong>
+								<p>ViscoStat, Франция</p>
+								<span>8 600 руб.</span>
+							</div>	
+						</div>
+					</div>				
+					<div class="bestsellers-slider__wrap clr">
+						<div class="bestsellers-slider__box">
+							<a href="#" class="bestsellers-slider__img">
+								<img src="img/img-bestsellers1.jpg" alt="">
+								<img src="img/img-view.png" class="view" alt="">
+							</a>
+							<div class="bestsellers-slider__text">
+								<strong><a href="#">Гемостатик, шприц 30 мл.</a></strong>
+								<p>ViscoStat, Франция</p>
+								<span>8 600 руб.</span>
+							</div>	
+						</div>
+					</div>				
+					<div class="bestsellers-slider__wrap clr">
 						<div class="bestsellers-slider__box">
 							<a href="#" class="bestsellers-slider__img">
 								<img src="img/img-bestsellers1.jpg" alt="">
@@ -130,76 +324,36 @@
 							</div>	
 						</div>
 					</div>
-					<div class="bestsellers-slider__wrap">
+					<div class="bestsellers-slider__wrap clr">
 						<div class="bestsellers-slider__box">
 							<a href="#" class="bestsellers-slider__img">
-								<img src="img/img-bestsellers2.jpg" alt="">
-								<img src="img/img-view.png" class="view" alt="">
-							</a>
-							<div class="bestsellers-slider__text">
-								<strong><a href="#">Ретракционная нить набор</a></strong>
-								<p>UltraPak, Франция</p>
-								<span>9 600 руб.</span>
-							</div>
-						</div>
-					</div>
-					<div class="bestsellers-slider__wrap">
-						<div class="bestsellers-slider__box">
-							<a href="#" class="bestsellers-slider__img">
-								<img src="img/img-bestsellers3.jpg" alt="">
-								<img src="img/img-view.png" class="view" alt="">
-							</a>
-							<div class="bestsellers-slider__text">
-								<strong><a href="#">Трикальций селикатный цемент (уп.15 капс. 0,7 г+15 капс. жидк.)</a></strong>
-								<p>Biodentine, Франция</p>
-								<span>4 500 руб.</span>
-							</div>
-						</div>
-					</div>
-					<div class="bestsellers-slider__wrap">
-						<div class="bestsellers-slider__box">
-							<a href="#" class="bestsellers-slider__img">
-								<img src="img/img-bestsellers4.jpg" alt="">
+								<img src="img/img-bestsellers1.jpg" alt="">
 								<img src="img/img-view.png" class="view" alt="">
 							</a>
 							<div class="bestsellers-slider__text">
 								<strong><a href="#">Гемостатик, шприц 30 мл.</a></strong>
 								<p>ViscoStat, Франция</p>
-								<span>12 100 руб.</span>
-							</div>
+								<span>8 600 руб.</span>
+							</div>	
 						</div>
 					</div>
+					<div class="bestsellers-slider__wrap clr">
+						<div class="bestsellers-slider__box">
+							<a href="#" class="bestsellers-slider__img">
+								<img src="img/img-bestsellers1.jpg" alt="">
+								<img src="img/img-view.png" class="view" alt="">
+							</a>
+							<div class="bestsellers-slider__text">
+								<strong><a href="#">Гемостатик, шприц 30 мл.</a></strong>
+								<p>ViscoStat, Франция</p>
+								<span>8 600 руб.</span>
+							</div>	
+						</div>
+					</div>					
 				</div>
-			</div>			
-		</section>
-		<section class="news">
-			<div class="wrapper clr">				
-				<article class="about-company">
-					<h3 class="news-title"><a href="#">Компания «маркетстом»</a></h3>
-					<p>Сегодня наша компания - это известнейший, надежный и авторитетный эксклюзивный поставщик стоматологической продукции ведущих мировых производителей на Российский рынок. Оборудование и материалы для стоматологии, которые мы поставляем, используются почти в каждой клинике и зуботехнической</p>
-					<a href="#"><span>Читать дальше &#8250;</span></a>
-				</article>
-				<div class="slider-news">
-					<div class="btn-group btn-bg_gray">
-						<a href="#" class="btn-slider left"><span class="ic icon-ic-arrow_left"></span></a>
-						<a href="#" class="btn-slider right"><span class="ic icon-ic-arrow_right"></span></a>
-					</div>
-					<h3 class="news-title"><a href="#">Новости и анонсы</a></h3>
-					<div class="general-news clr">
-						<article>
-							<time datetime="<04-28>">28 апреля</time>
-							<p>Представляем вашему вниманию зуботехнические сплавы «MAGNUM CERAMIC S», «MAGNUM SPLENDIDUM», они прошли испытания на цитотоксичность в соответствии</p>
-							<a href="#"><span>Читать дальше &#8250;</span></a>
-						</article>
-						<article>
-							<time datetime="<05-03>">3 мая</time>
-							<p>Для наших дорогих стоматологов есть прекрасная новость – теперь в магазинах Медтехника вы можете приобрести продукцию известного швейцарского бренда, лидера в области профессиональной</p>
-							<a href="#"><span>Читать дальше &#8250;</span></a>
-						</article>
-					</div>
-				</div>				
-			</div>			
-		</section>		
+				<button class="btn btn-show"><i class="ic ic--point"></i>Показать еще 30</button>
+			</div>
+		</div>		
 	</main>
 <!-- Content end -->
 <!-- Footer -->
@@ -269,7 +423,16 @@
 		</div>
 	</footer>
 <!-- Footer end -->
-	<script src="js/jquery-1.11.3.min.js"></script>	
-	<script type="text/javascript" src="js/jquery.main" ></script>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.formstyler.min.js"></script>
+	<script type="text/javascript" src="js/custom.js"></script>
+
+	<script type="text/javascript">
+		(function($) {
+		$(function() {
+  			$('.styler').styler();
+		});		
+		})(jQuery);
+	</script>
 </body>
 </html>
